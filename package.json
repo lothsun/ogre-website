@@ -5,12 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "scss": "node-sass --watch src/assets/scss -o src/assets/css"
   },
   "dependencies": {
+    "acorn": "^6.1.1",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.6.5",
     "firebase": "^5.9.4",
-    "vue": "^2.6.10"
+    "jquery": "^3.4.0",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.15.0",
+    "vue": "^2.6.10",
+    "webpack": "^4.30.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
@@ -19,7 +26,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,

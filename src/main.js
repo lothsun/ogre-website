@@ -2,8 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import firebase from "firebase/app"
 import "firebase/firestore";
-import firebaseConfig from './firebaseConfig.js'
+import firebaseConfig from './firebaseConfig.js';
+import bootstrap from 'bootstrap';
 firebase.initializeApp(firebaseConfig.config);
+
 
 var db = firebase.firestore();
 var gamesRef = db.collection('games');
