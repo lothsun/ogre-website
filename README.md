@@ -1,5 +1,5 @@
-# ogre-website
-Website for ogre gaming group
+# Organized Gaming Resource of Evansville Website
+Building out a website for OGRE. First priority will be a game management system. from there we will build out with more features. 
 
 ## Project setup
 ```
