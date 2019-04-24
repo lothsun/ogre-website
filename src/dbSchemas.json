@@ -1,0 +1,49 @@
+{
+    "games":{
+        "game1":{
+            "title" : "title",
+            "desc" : "description",
+            "gameType" : "game type",
+            "maxPlayers" : "max players",
+            "currentPlayers" : "current players",
+            "dm" : "dm",
+            "week" : "week",
+            "homebrewRules" : "homebrew rules",
+            "startDate" : "start date",
+            "estimatedEnd" : "estimated end date",
+            "players" : {
+                "0" : {
+                    "name" : "name",
+                    "profile" : "ref(user)",
+                    "char" : {
+                        "name" : "character name",
+                        "race" : "character race",
+                        "class" : "character class"
+                    }
+                },
+                "1" : {
+                    "name" : "name",
+                    "profile" : "ref(user)",
+                    "char" : {
+                        "name" : "character name",
+                        "race" : "character race",
+                        "class" : "character class"
+                    }
+                }
+            }
+        }
+    },
+    "users":{
+        "user1" : {
+            "username" : "username",
+            "uid" : "uid",
+            "name" : "name",
+            "email" : "email",
+            "age" : "age",
+            "games" : [
+                "ref(games)",
+                "ref(games)"
+            ]
+        }
+    }
+}   
