@@ -3,7 +3,6 @@ import App from './App.vue'
 import firebase from "firebase/app"
 import "firebase/firestore";
 import firebaseConfig from './firebaseConfig.js';
-import bootstrap from 'bootstrap';
 firebase.initializeApp(firebaseConfig.config);
 
 

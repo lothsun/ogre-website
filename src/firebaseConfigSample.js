@@ -1,4 +1,4 @@
-var config = {
+module.exports.config = {
     apiKey: "apiKey",
     authDomain: "authDomain",
     databaseURL: "databaseURL",

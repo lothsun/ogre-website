@@ -11,18 +11,18 @@
   "dependencies": {
     "acorn": "^6.1.1",
     "bootstrap": "^4.3.1",
-    "core-js": "^2.6.5",
-    "firebase": "^5.9.4",
-    "jquery": "^3.4.0",
-    "node-sass": "^4.11.0",
+    "core-js": "^2.6.7",
+    "firebase": "^5.11.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
     "vue": "^2.6.10",
-    "webpack": "^4.30.0"
+    "webpack": "^4.32.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.6.0",
-    "@vue/cli-plugin-eslint": "^3.6.0",
-    "@vue/cli-service": "^3.6.0",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
