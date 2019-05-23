@@ -3,16 +3,16 @@
         "game1":{
             "title" : "title",
             "desc" : "description",
-            "gameType" : "game type", // D&D, 7 seas, etc
-            "maxPlayers" : "max players", // max number of players
-            "currentPlayers" : "current players", // current number of players
+            "gameType" : "game type",
+            "maxPlayers" : "max players", 
+            "currentPlayers" : "current players", 
             "dm" : "dm",
-            "week" : "week", // A or B. Might use colors in future and color code the days on a calendar
+            "week" : "week", 
             "homebrewRules" : "homebrew rules",
             "startDate" : "start date",
             "estimatedEnd" : "estimated end date",
-            "isActive" : "true", // boolean; will disable certain options on the game
-            "players" : { // array containing all the players  for the specific game
+            "isActive" : "true", 
+            "players" : { 
                 "0" : {
                     "name" : "name",
                     "profile" : "ref(user)",
@@ -33,11 +33,11 @@
                 }
             }
         }
-    }
+    },
     "users":{
         "user1" : {
             "username" : "username",
-            "uid" : "uid", // Firebase auth uid for user accounts to tie user data to theit auth. 
+            "uid" : "uid", 
             "name" : "name",
             "email" : "email",
             "age" : "age",
