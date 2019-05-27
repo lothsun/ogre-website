@@ -4,7 +4,10 @@ import firebase from "firebase/app"
 import "firebase/firestore";
 import firebaseConfig from './firebaseConfig.js';
 firebase.initializeApp(firebaseConfig.config);
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
 
+Vue.use(Buefy)
 
 var db = firebase.firestore();
 var gamesRef = db.collection('games');
