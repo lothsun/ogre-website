@@ -1,3 +1,4 @@
+![website build version](https://img.shields.io/badge/Version-0.1.0-blue.svg)
 # Organized Gaming Resource of Evansville Website
 Building out a website for OGRE. First priority will be a game management system. from there we will build out with more features. 
 
