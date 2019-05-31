@@ -13,18 +13,16 @@
             "estimatedEnd" : "estimated end date",
             "isActive" : "true", 
             "players" : { 
-                "0" : {
+                "uid" : {
                     "name" : "name",
-                    "profile" : "ref(user)",
                     "char" : {
                         "name" : "character name",
                         "race" : "character race",
                         "class" : "character class"
                     }
                 },
-                "1" : {
+                "uid" : {
                     "name" : "name",
-                    "profile" : "ref(user)",
                     "char" : {
                         "name" : "character name",
                         "race" : "character race",
