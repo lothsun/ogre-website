@@ -4,7 +4,7 @@
     <Nav/>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Games :games="games"/>
+    <Games />
   </div>
 </template>
 
@@ -26,25 +26,24 @@ export default {
   },
   data() {
     return {
-      games
+    
     }
   },
 }
-import firebase from "firebase/app"
-import "firebase/firestore";
-import firebaseConfig from './firebaseConfig.js';
-firebase.initializeApp(firebaseConfig.config);
-var db = firebase.firestore();
-var gamesRef = db.collection('games');
+// import firebase from "firebase/app"
+// import "firebase/firestore";
+// import firebaseConfig from './firebaseConfig.js';
+// firebase.initializeApp(firebaseConfig.config);
+// var db = firebase.firestore();
+// var gamesRef = db.collection('games');
 
-gamesRef.get().then(function(querySnapshot) {
-   querySnapshot.forEach(function(doc) {
-      // doc.data() is never undefined for query doc snapshots
-       console.log(doc.id, " => ", doc.data());
-  });
-});
+// gamesRef.get().then(function(querySnapshot) {
+//    querySnapshot.forEach(function(doc) {
+//       // doc.data() is never undefined for query doc snapshots
+//        console.log(doc.id, " => ", doc.data());
+//   });
+// });
 
-var games = gamesRef.get()
 
 </script>
 

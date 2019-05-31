@@ -1,11 +1,11 @@
 <template>
     <section class="section">
         <div class="container">
-            <div v-for="(game, index) in games" :key="index" class="game">
+            <div v-for="game in games" :key="game.id" class="game">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-header-title"></div>
-                        <div class="card-header-icon"></div>
+                        <div class="card-header-title">{{ game.title }}</div>
+                        <div class="card-header-icon">{{ game.dm }}</div>
                     </div>
                     <div class="card-image"></div>
                     <div class="card-content"></div>
@@ -21,14 +21,29 @@
 
 
 <script>
+import db from '@/firebase/init'
+
 export default {
     name: 'Games',
-    props: ['games'],
     data() {
         return {
-            
+            games:[]
         }
     },
+    created(){
+        //fetch data from firestore
+        db.collection('games').get()
+        .then(snapshot => {
+            snapshot.forEach(doc => {
+                //console.log(doc)
+                //console.log(doc.id, " => ", doc.data())
+                //console.log(doc.data())
+                let game = doc.data()
+                game.id = doc.id
+                this.games.push(game)
+            })
+        })
+    }
 }
 
 </script>
