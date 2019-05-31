@@ -1,8 +1,8 @@
 <template>
     <section class="section">
         <div class="container">
-            <div v-for="game in games" :key="game.id" class="game">
-                <div class="card">
+            <div class="games">
+                <div v-for="game in games" :key="game.id" class="card game">
                     <div class="card-header">
                         <div class="card-header-title">{{ game.title }}</div>
                         <div class="card-header-icon">{{ game.dm }}</div>
@@ -50,5 +50,8 @@ export default {
 
 
 <style scoped>
-
+.game{
+    /* margin: auto; */
+    margin-top: 20px;
+}
 </style>
