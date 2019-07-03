@@ -3,6 +3,7 @@
         "game1":{
             "title" : "title",
             "desc" : "description",
+            "shortDesc": "short description",
             "gameType" : "game type",
             "maxPlayers" : "max players", 
             "currentPlayers" : "current players", 
@@ -13,7 +14,7 @@
             "estimatedEnd" : "estimated end date",
             "isActive" : "true", 
             "players" : { 
-                "uid" : {
+                "slug" : {
                     "name" : "name",
                     "char" : {
                         "name" : "character name",
@@ -21,7 +22,7 @@
                         "class" : "character class"
                     }
                 },
-                "uid" : {
+                "slug" : {
                     "name" : "name",
                     "char" : {
                         "name" : "character name",
@@ -33,12 +34,11 @@
         }
     },
     "users":{
-        "user1" : {
+        "username" : {
             "username" : "username",
             "uid" : "uid", 
             "name" : "name",
             "email" : "email",
-            "age" : "age",
             "games" : [
                 "ref(games)",
                 "ref(games)"
