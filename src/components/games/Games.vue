@@ -38,10 +38,7 @@ export default {
     data() {
         return {
             games:[],
-            players:[],
-            currentUser: {
-                uid: "GTv68wXXfHQ2BRecVhxNWBDDRTr1",
-            }
+            players:[]
         }
     },
     created(){

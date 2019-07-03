@@ -1,5 +1,5 @@
 <template>
-    <section class="section game">
+    <section v-if="game" class="section game">
         <div class="container">
             <div class="players columns">
                 <h1 class="is-size-1">{{game.title}}</h1>

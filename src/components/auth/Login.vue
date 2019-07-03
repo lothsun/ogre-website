@@ -56,6 +56,10 @@ export default {
                     this.feedback = err.message
                 })
                 this.feedback = null
+                .then(() => {
+                    this.userLoggedIn = true
+                })
+                
             } else {
                 this.feedback = 'Please fill in both fields'
             }
